@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4ff;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 24px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 900px;
+    background: none ;
+    padding: 20px;
+    border-radius: 10px;
+   
+    box-shadow: none;
+    
+}
+
+.contact-info, .contact-form {
+    width: 45%;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.contact-item i {
+    font-size: 22px;
+    color: #6c63ff;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #6c63ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #6c63ff;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+    }
+}
